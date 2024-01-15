@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, serif;
+    font-size: 16px;
+}
+
+.main, .row, .accordion, .form {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.slick-prev:before {
+    background-image: url("../images/arrow-left.png");
+    z-index: 99;
+}
+
+.slick-next:before {
+    background: url("../images/arrow-right.png");
+}
+
+.slick-prev, .arrow__left {
+    left: 20px;
+    z-index: 9;
+    top: 300px;
+}
+
+.slick-next, .arrow__right {
+    right: 20px;
+    top: 300px;
+}
+
+#back, #forward {
+    z-index: 9;
+}
+
+.ui-state-default {
+    background: linear-gradient(360deg, #076BFF 0%, #007BFF 100%);
+    border-radius: 10px;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: 0 0;
+}
+
+
+
+
+
+
+.arrow-ritht__image, .arrow-left__image {
+    top: calc(50% - 20px);
+    right: 12px;
+    cursor: pointer;
+}
+
+.arrow-left__image {
+    top: calc(50% - 20px);
+    right: unset;
+    left: 12px;
+}
+
+.ui-accordion-header {
+    position: relative;
+}
+
+.ui-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 30px;
+    /*transform: scale(1.5);*/
+}
+
+.ui-icon-triangle-1-e {
+    background-position: 0 0;
+}
+
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: url('../images/down.png');
+}
+
+.ui-accordion-header:hover .ui-icon, .ui-accordion-header:hover .ui-widget-content .ui-icon {
+    background-image: url('../images/down-hover.png');
+}
+
+.ui-accordion-header-active:hover .ui-icon, .ui-widget-content .ui-icon {
+    background-image: url('../images/up.png');
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image: url("../images/up.png");
+}
+
+.hidden {
+    display: none;
+}
+
+.form__input {
+    max-width: 120px;
+}
+
+.nav__menu {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 727px) {
+    .container-fluid {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-brand, .nav__menu, .form__find {
+        justify-self: center;
+        margin: 0 auto;
+        flex-grow: unset;
+    }
+
+    .navbar-expand {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar {
+        --bs-navbar-nav-link-padding-x: 0.1rem;
+    }
+}
